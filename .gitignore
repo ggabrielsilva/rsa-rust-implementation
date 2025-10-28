@@ -1,0 +1,11 @@
+# Ignorar a pasta de build
+target/
+
+# Ignorar arquivos temporários e de editor
+*~
+*.swp
+.idea/
+.vscode/
+
+# Ignorar dados do sistema de arquivos e logs
+*.log
