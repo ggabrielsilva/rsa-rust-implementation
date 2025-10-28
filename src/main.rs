@@ -1,7 +1,7 @@
-use num_bigint::{BigInt, BigUint, RandBigInt};
+use num_bigint::{BigUint, RandBigInt};
 use num_traits::{One, Zero};
 use rand::thread_rng;
-use std::ops::{Rem, Mul};
+use std::ops::Rem;
 
 // Estrutura para as chaves RSA
 #[derive(Debug)]
@@ -142,7 +142,7 @@ fn main() {
     println!("   Chave Pública (e): {}", keys.e);
 
     // 2. Mensagem a ser criptografada
-    let original_message_str = "A Manus é uma IA poderosa para auxiliar em tarefas de programação.";
+    let original_message_str = "Montanha é 10";
     let original_message_bytes = original_message_str.as_bytes();
     // Converter a string para um BigUint (representação numérica)
     let original_message = BigUint::from_bytes_be(original_message_bytes);
